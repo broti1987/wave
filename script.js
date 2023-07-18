@@ -62,7 +62,7 @@ const initWaves = () => {
       stop: stop,
       lineWidth: 1.5,
       xSpeed: valueMapping(Math.random(), 0, 100, -0.02, -0.02),
-      amplitude: valueMapping(Math.random(), 0, 1.75, 0.025, 0.5),
+      amplitude: valueMapping(Math.random(), 0, 2, 0.025, 0.5),
       offset: Math.random() * 100
     }));
   }
