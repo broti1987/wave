@@ -33,7 +33,7 @@ class Wave {
     this.xMove += this.xSpeed;
     for(var x = 0; x < this.canvas.width; x++){
       const radians = x / this.canvas.width * Math.PI * 2;
-      const scale = (Math.sin(radians - Math.PI * 0.5) + 1) * 0.5;
+      const scale = (Math.sin(radians - Math.PI * 2) + 1) * 0.5;
       const y = Math.sin(x * 0.02 + this.xMove) * this.amplitude * scale;
       ctx.lineTo(x, y);
     }
